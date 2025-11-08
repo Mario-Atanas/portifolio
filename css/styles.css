@@ -1,0 +1,202 @@
+
+         /*ESTILOS GERAIS*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-size:clamp(16px,2.5vw,22px);
+  font-family:sans-serif;
+}
+
+h2{
+  width:fit-content;
+  margin-bottom:15px;
+  padding:10px;
+  border-radius:8px;
+  font-size:1.3rem;
+  background-color:#DEDEDE;
+}
+
+a{
+  color:#3D86B4;
+  font-family:serif;
+  text-decoration:none;
+}
+
+a:hover{
+  color:Blue;
+  text-decoration:underline;
+}
+
+
+
+.container{
+  padding-bottom:20px;
+}
+
+main,footer{
+  margin:20px;
+}
+
+main section{
+  margin-bottom:20px;
+  padding:15px;
+  border-radius:8px;
+  box-shadow:0 0 5px rgba(0,0,0,0.25);
+  
+}
+
+main ul{ 
+  list-style:inside;
+  list-style-type:none;
+}
+
+footer {
+  font-style:italic;
+  text-align:center;
+  color:#1E2C37;
+  border-top:1px solid #1E2C37;
+  padding-top:10px
+}
+
+      /*ESTILOS DE COMPONENTES*/
+	  
+.card{
+  border-radius:8px;
+  border: 1px solid #1E2C37;
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+ }
+
+            /*CABEÇALHO*/
+.profile-header{
+  padding:30px;
+  background-color:#1E2C37;
+  color:#fff;
+}
+
+.profile-header figure{
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.profile-header figure img{
+  width:clamp(100px,25vw,180px);
+  aspect-ratio:1/1;
+  border:1px solid #ccc;
+  border-radius:100%;
+}
+
+.profile-header figure h1{
+  font-size:1.8rem;
+}
+
+.profile-header figure p{
+  font-size:0.8rem;
+  }
+  
+         /*CORPO DA PÁGINA*/
+  
+	/*secçao sobre mim*/
+	
+.about-me p, .contacts ul{
+  padding:15px;
+}
+
+	/*secçao Tecnologias*/
+	
+.technologies ul{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  text-align:center;
+}
+.technologies li{
+  padding:5px;
+  font-size:1.3rem;
+}
+	/*secçao projetos*/
+
+.projects ul{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  
+}
+
+.projects li{
+  width:clamp(90px,40vw,170px);
+  padding:5px;
+  margin-bottom:15px;
+}
+
+.projects h3,a{
+  margin-top:10px;
+  margin-left:15px;
+  font-size:1rem;
+}
+
+.projects li img{
+  width:100%;
+  aspect-ratio:1/1;
+  padding:5px;
+  border-radius:8px;
+  box-shadow:0 0 3px rgba(0,0,0,0.5);
+}
+
+	/*secçao contatos*/
+
+.contacts li{
+  margin-bottom:10px;
+}
+
+.contacts li a{
+  font-size:1.1rem;
+}
+
+           /*ICONES*/
+		   
+		   .fa-js {
+  color: #f7df1e;
+  font-size:2.6rem;
+}
+
+.fa-css3 {
+  color: #1572b6;
+  font-size:2.6rem;
+}
+
+.fa-html5 {
+  color: #e34c26;
+  font-size:2.6rem;
+}
+
+              /*MEDIA*/
+			  
+@media (min-width:600px){
+  body{
+	width:100vw;
+	height:100vh;
+	padding:5vw;
+	background:linear-gradient(to bottom, #fff 0%, #fff 30%,#1E2C37 30%,#1E2C37 100%);
+  }
+  .container{
+	max-width:800px;
+	margin:auto;
+	border-radius:15px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	background-color:#fff;
+  }
+  
+  .profile-header{
+	border-radius:15px 15px 0 0;
+  }
+  
+  .profile-header figure{
+   gap:30px;
+  }
+  
+}
+ 
